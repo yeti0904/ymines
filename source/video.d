@@ -39,7 +39,7 @@ class VideoComponents {
 			exit(1);
 		}
 		version (Windows) {
-			loadSDL(dirName(thisExePath()) ~ "/sdl2.dll");
+			loadSDL(toStringz(dirName(thisExePath()) ~ "/sdl2.dll"));
 		}
 
 		// init
